@@ -1,27 +1,30 @@
-# 🌐 Language Translation Tool
+# Language Translation Tool
 
-## 📌 Project Overview
-The Language Translation Tool is an AI-based software application developed as part of my internship project. It uses NLP to translate text from one language to another using the Google Translate API and a Streamlit interface.
+A web app that translates text between languages in real time, built with Python and Streamlit.
 
-## 🧰 Components & Applications Used
-- Python 3.x
-- Streamlit
-- Googletrans
-- Git & GitHub
-- VS Code / PyCharm
+## Features
+- Translate text between major world languages
+- Auto-detect the input language [keep only if your code does this]
+- Simple browser interface with Streamlit
 
-## 📚 Libraries Used for Compiling the Code
-- googletrans==4.0.0rc1
-- streamlit
+## Tech Stack
+- Python 3
+- Streamlit (UI)
+- googletrans (unofficial Google Translate wrapper)
 
-Install dependencies using:
-```bash
+## How It Works
+1. The user enters text and selects a target language.
+2. The app sends it to Google Translate through googletrans.
+3. The translated text is shown instantly.
+
+## Run Locally
 pip install -r requirements.txt
-```
+streamlit run app.py
 
-## 🚀 Project Outcome
-- Real-time, web-based translation between major world languages.
-- Functional and extendable with features like voice translation or chatbot integration.
+## Results
+Text was translated in real time between multiple languages through the web interface.
 
-## ✅ Conclusion
-This project showcases the integration of AI with frontend tools. It served as a valuable experience in NLP and app development.
+## Future Improvements
+- Voice input/output
+- Official Google Cloud Translation API
+- Translation history
